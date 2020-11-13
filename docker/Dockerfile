@@ -21,3 +21,6 @@ RUN crontab /scripts/docker/crontab_list.sh
 WORKDIR /scripts
 
 CMD ["node"]
+
+
+abc
