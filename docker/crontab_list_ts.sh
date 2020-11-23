@@ -55,3 +55,7 @@
 12 * * * * node /scripts/jd_pigPet.js |ts >> /scripts/logs/jd_pigPet.log 2>&1
 # 点点券
 20 0,20 * * * node /scripts/jd_necklace.js |ts >> /scripts/logs/jd_necklace.log 2>&1
+# 京喜工厂
+20 * * * * node /scripts/jd_dreamFactory.js |ts >> /scripts/logs/jd_dreamFactory.log 2>&1
+# 东东小窝
+16 0 * * * node /scripts/jd_small_home.js |ts >> /scripts/logs/jd_small_home.log 2>&1
