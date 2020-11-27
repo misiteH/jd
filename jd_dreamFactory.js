@@ -89,11 +89,11 @@ if ($.isNode()) {
 async function jdDreamFactory() {
   ele = 0;
   await userInfo();
-  await helpFriends(inviteCodes)
+  //await helpFriends(inviteCodes)
   if ($.unActive) return
   await getUserElectricity();
   await taskList();
-  await investElectric();
+  //await investElectric();
   // await assistFriend('gB99tYLjvPcEFloDgamoBw==');
   await hireAward();
   await stealFriend();
