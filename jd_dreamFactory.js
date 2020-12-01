@@ -87,11 +87,11 @@ if ($.isNode()) {
 async function jdDreamFactory() {
   await userInfo();
   await JoinTuan();
-  await helpFriends();
+  //await helpFriends();
   if (!$.unActive) return
   await getUserElectricity();
   await taskList();
-  await investElectric();
+  //await investElectric();
   await hireAward();
   await PickUp();
   await stealFriend();
