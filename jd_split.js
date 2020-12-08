@@ -74,7 +74,7 @@ $.newShareCodes = [`P04z54XCjVUnIaW5nJcXCCyoR8C6p8txXBH`, 'P04z54XCjVUnIaW5m9cZ2
       $.done();
     })
 async function jdSplit() {
-  await helpFriends();
+  //await helpFriends();
   await jdsplit_getTaskDetail();
   await doTask();
   await showMsg();
