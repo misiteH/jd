@@ -76,7 +76,7 @@ const inviteCodes = [`P04z54XCjVUnoaW5nJcXCCyoR8C6i9QR16e`, 'P04z54XCjVUnoaW5m9c
       $.done();
     })
 async function jdHealth() {
-  await helpFriends();
+  //await helpFriends();
   await jdhealth_getTaskDetail();
   await doTask();
   await jdhealth_getTaskDetail(0);

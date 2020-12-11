@@ -80,7 +80,7 @@ const JD_API_HOST = 'https://digital-floor.m.jd.com/adf/index/';
     })
 async function jdDigitalFloor() {
   $.bean = 0
-  await helpFriends()
+  //await helpFriends()
   await getUserInfo()
   await getTaskList()
   await showMsg()
