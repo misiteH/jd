@@ -94,13 +94,12 @@ if ($.isNode()) {
 
 async function jdDreamFactory() {
   await userInfo();
-  await QueryFriendList();//查询今日招工情况以及剩余助力次数
-  await joinLeaderTuan();//参团
-  await helpFriends();
+  // await JoinTuan();参团功能暂时无效，
+  //await helpFriends();
   if (!$.unActive) return
   await getUserElectricity();
   await taskList();
-  await investElectric();
+  //await investElectric();
   await QueryHireReward();//收取招工电力
   await PickUp();//收取自家的地下零件
   await stealFriend();
