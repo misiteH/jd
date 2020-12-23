@@ -6,7 +6,7 @@ name: CrazyJoy挂机
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 23 * * *'
+    - cron: '35 * * * *'
   watch:
     types: [started]
   repository_dispatch:
