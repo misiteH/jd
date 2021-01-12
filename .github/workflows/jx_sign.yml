@@ -1,7 +1,7 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 京东健康
+name: 京喜签到
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
   watch:
     types: [started]
   repository_dispatch:
-    types: jdh
+    types: jxqd
 jobs:
   build:
 
@@ -35,9 +35,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 京东健康 '
+      - name: '运行 京喜签到 '
         run: |
-          node jd_jdh.js
+          node jx_sign.js
 
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
