@@ -85,7 +85,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 async function jdCash() {
   await index()
   await shareCodesFormat()
-  await helpFriends()
+  //await helpFriends()
   await index(true)
   // await getReward()
   await showMsg()
