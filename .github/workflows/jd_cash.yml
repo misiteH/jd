@@ -6,7 +6,7 @@ name: 京东领现金
 on:
   workflow_dispatch:
   schedule:
-    - cron: '19 6,12 * * *'
+    - cron: '19 6,12,15 * * *'
   watch:
     types: [started]
   repository_dispatch:
