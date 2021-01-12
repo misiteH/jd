@@ -237,7 +237,7 @@ async function jdJXNC() {
             await $.wait(500);
             const endInfo = await getTaskList();
             getMessage(endInfo, startInfo);
-            let next = await helpFriends();
+            let next = false;
             if (next) {
                 await submitInviteId($.UserName);
                 await $.wait(500);
