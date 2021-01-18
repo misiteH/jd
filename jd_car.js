@@ -31,7 +31,9 @@ const randomCount = $.isNode() ? 20 : 5;
 let cookiesArr = [], cookie = '', message;
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
-    cookiesArr.push(jdCookieNode[item])
+    if (jdCookieNode[item]) {
+          cookiesArr.push(jdCookieNode[item])
+        }
   })
   if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {
   };

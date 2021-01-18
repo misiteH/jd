@@ -245,7 +245,7 @@ async function jdJXNC() {
             getMessage(endInfo, startInfo);
             await submitInviteId($.UserName);
             await $.wait(500);
-            let next = await helpFriends();
+            let next = false;
             if (next) {
                 while (true) {
                     assistUserShareCode = await getAssistUser();
